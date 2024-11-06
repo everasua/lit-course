@@ -12,7 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <custom-header><i class="fa fa-github" style="font-size:24px"></i></custom-header>
+    <style>
+      .header {
+        --color-link: green;
+        color:  green;
+      }
+    </style>
+    <custom-header class="header"><i class="fa fa-github" style="font-size:24px"></i></custom-header>
     <!-- Añadir slot, custom elements y custom events. Hablar de internals -->
      <script>
       const customHeader = document.querySelector('custom-header');
